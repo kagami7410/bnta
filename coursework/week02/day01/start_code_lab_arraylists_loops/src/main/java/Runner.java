@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Collections;
 
 public class Runner {
 
@@ -57,6 +56,17 @@ public class Runner {
 //        2. Print the difference between the largest and smallest value
 //        3. Print true if the list contains a 1 next to a 1 somewhere
 //        4. Print the sum of the numbers
+        int sum = 0;
+
+        for(int i = 0; i < numbers.size(); i++) {
+           if(numbers.get(i) == 13){
+               sum += numbers.get(i);
+               break;
+           }
+            sum += numbers.get(i);
+
+        }
+        System.out.println(sum);
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count
