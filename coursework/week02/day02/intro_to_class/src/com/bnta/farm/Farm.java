@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Farm {
     //static members belong to the class itself.
     // ArrayList storing farm objects.
-    public static ArrayList<Farm> farms = new ArrayList<>();
+    public static List<Farm> farms = new ArrayList<>();
     public static List<Horse> horses = new ArrayList<>();
     public static List<Pig> pigs = new ArrayList<>();
 
@@ -29,9 +29,16 @@ public class Farm {
     public void addHorse(Horse horse){
         this.horses.add(horse);
     }
+    public void addPig(Pig pig){
+        this.pigs.add(pig);
+    }
 
     public List<Horse> getHorses(){
         return this.horses;
+    }
+
+    public List<Pig> getPigs(){
+        return this.pigs;
     }
 
     @Override
@@ -40,6 +47,7 @@ public class Farm {
                 "name='" + name + '\'' +
                 ", acres=" + acres +
                 ", horses=" + horses +
+                ". pigs=" + pigs +
                 '}';
     }
 

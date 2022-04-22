@@ -6,10 +6,10 @@ public class Pig {
 
     private String name;
     private int age;
-    private short height;
+    private double height;
 
 
-    public Pig(String name, int age, short height) {
+    public Pig(String name, int age, double height) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -31,11 +31,11 @@ public class Pig {
         this.age = age;
     }
 
-    public short getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(short height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
