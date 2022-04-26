@@ -8,7 +8,7 @@ public class Farm {
 
 
 
-    public Farm(String name, List<Chicken> chickens, int eggForSale){
+    public Farm(String name, int eggForSale){
         this.name = name;
         this.eggsForSale = 0;
         this.chickens = chickens;

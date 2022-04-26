@@ -12,10 +12,11 @@ public class GalleryTest {
     Artwork artwork2;
 
 
+
     @BeforeEach
     public void setUp(){
         gallery = new Gallery("London Gallery", 0);
-        artwork1 = new Artwork("Picasso", "da vinci", 300, 30);
+        artwork1 = new Artwork("Picasso", "da vinci", 500, 30);
         artwork2 = new Artwork("Great_Painting", "Mr.Painter", 100, 43);
         gallery.addArtwork(artwork1);
         gallery.addArtwork(artwork2);
@@ -30,6 +31,12 @@ public class GalleryTest {
     @Test
     public void canSellArtwork(){
         gallery.soldArtwork(gallery);
-        assertThat(gallery.getTill()).isEqualTo(400);
+        assertThat(gallery.getTill()).isEqualTo(500);
+        assertThat(gallery.getArtworks().size()).isEqualTo(0);
+
     }
+
+
+
+
 }

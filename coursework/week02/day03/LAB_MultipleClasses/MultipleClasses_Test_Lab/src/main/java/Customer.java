@@ -22,6 +22,9 @@ public class Customer {
     public void boughtArtwork(Gallery gallery){
         for(Artwork artworks: gallery.getArtworks()){
             this.wallet -= artworks.getPrice();
+
+
+
         }
     }
 }

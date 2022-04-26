@@ -24,12 +24,12 @@ public class FarmerTest {
         chicken_Andy = new Chicken("Andy", 6);
         chicken_Goku = new Chicken("Goku" , 8);
         farmer = new Farmer("Kevin");
-        farm = new Farm("Lazy Farm",  )
+        farm = new Farm("Lazy Farm", 78 );
 
     }
 
     @Test
     public void canCollectedEgg(){
-        assertThat(farmer.collectEggs(farm)).isEqualTo(0);
+        assertThat(farmer.collectEggs(farm)).isEqualTo(0.9);
     }
 }
