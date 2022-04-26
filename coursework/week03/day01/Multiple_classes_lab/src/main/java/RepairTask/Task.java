@@ -1,10 +1,8 @@
 package RepairTask;
 
-public class Task {
+public interface Task {
+    String repair();
+    String repair(Task task);
 
-    private String repair;
 
-    public Task(String repair){
-        this.repair = repair;
-    }
 }

@@ -1,4 +1,4 @@
-package vehicle;
+package vehicles;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public abstract class Vehicle {
     private boolean allfixed;
 
 
-    public Vehicle(String registration, String brand, String problem){
+    public Vehicle(String registration, String brand, String problem) {
         this.registration = registration;
         this.brand = brand;
         this.problem = problem;
@@ -34,9 +34,25 @@ public abstract class Vehicle {
         return allfixed;
     }
 
+    public void setProblem(String problem) {
+        this.problem = problem;
+    }
 
+    public void setAllfixed(boolean allfixed) {
+        this.allfixed = allfixed;
+    }
 
-
+    public String move(Vehicle vehicle){
+        if(vehicle.isAllfixed() == true){
+            return "Vehicle is moving";
+        }
+        else{
+            return "Vehicle is still not repaired";
+        }
+    }
 
 
 }
+
+
+

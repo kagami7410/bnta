@@ -1,3 +1,4 @@
+import interfaces.Swimable;
 import models.Championship;
 import models.Swimmer;
 import models.Triathlete;
@@ -8,7 +9,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ChampionshipTest {
     Championship championship;
-    Swimmer swimmer;
+    Swimable swimmer;
     Triathlete triathlete;
 
     @BeforeEach

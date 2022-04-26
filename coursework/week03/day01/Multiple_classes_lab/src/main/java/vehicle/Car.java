@@ -2,20 +2,20 @@ package vehicle;
 
 import RepairTask.Task;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Task {
 
-    public Car(String registration, String brand) {
-        super(registration, brand);
+    public Car(String registration, String brand, String problem) {
+        super(registration, brand, problem);
+    }
+
+
+    @Override
+    public String repair() {
+        return "Your vehicle is repaired";
     }
 
     @Override
-    public Task repair(){
-
-        return task;
-    }
-
-    @Override
-    public Task repair(Task task){
-        return task;
+    public String repair(Task task) {
+        return null;
     }
 }
